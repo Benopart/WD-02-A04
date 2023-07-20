@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web-Dev-02 Assignment-03</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Agdasima:wght@400;700&family=Josefin+Sans&family=Belanosima:wght@400;600&family=Cormorant+Garamond&family=Eczar&family=Libre+Franklin&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize-fwd.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- Start of logo section-->
+      <div class="logo">
+        <img src="images/TechCrunch.png" alt="Website Logo" />
+      </div>
+      <!--End of logo section-->
+      <div class="container nav-container">
+        <!--Burger menu checkbox-->
+        <input
+          class="checkbox"
+          type="checkbox"
+          name="burger-menu"
+          id="burger-menu"
+        />
+        <!--Hamburger icon-->
+        <label for="burger-menu" class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </label>
+
+        <nav class="menu-items">
+          <!--Join/Login buttons section-->
+          <div id="join-btn-section">
+            <a id="join-btn">Join TechCrunch+</a>
+            <a id="login-btn">Login</a>
+          </div>
+          <!-- End of Join/Login buttons section -->
+
+          <ul id="navbar-menu">
+            <!-- Navigation links -->
+            <li><a href="#">Search</a></li>
+            <li><a href="#">TechCrunch+</a></li>
+            <li><a href="#">Startups</a></li>
+            <li><a href="#">Venture</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">AI</a></li>
+            <li><a href="#">Crypto</a></li>
+            <li><a href="#">Apps</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">More</a></li>
+            <!-- End of navigation links -->
+          </ul>
+        </nav>
+      </div>
+    </nav>
+    <!--End of navigation bar-->
+    <!--Top news section, one main on left and 4 verticaly stacked on right-->
+    <div id="top-news">
+      <!--Main news header-->
+      <section>
+        <h2 id="main-top-news">
+          <a href="#"
+            >Meta’s vision for Threads is more mega-mall than public square</a
+          >
+        </h2>
+        <!--Reporter name-->
+        <p id="rep-name"><a href="#">Taylor Hatmaker</a></p>
+      </section>
+      <!--Main news picture-->
+      <div id="main-rep-img">
+        <a href="#">
+          <figure>
+            <img
+              src="https://techcrunch.com/wp-content/uploads/2023/07/GettyImages-1507057889-e1688662829922.jpg?w=320&amp;h=347&amp;crop=1"
+              alt="Logo of Threads is displayed on a mobile phone screen in front of a screen"
+              srcset="
+                https://techcrunch.com/wp-content/uploads/2023/07/GettyImages-1507057889-e1688662829922.jpg?w=320&amp;h=347&amp;crop=1 320w,
+                https://techcrunch.com/wp-content/uploads/2023/07/GettyImages-1507057889-e1688662829922.jpg?w=850&amp;h=492&amp;crop=1 850w
+              "
+              sizes="(max-width: 1000px) calc(100vw-60px), 850px"
+            />
+          </figure>
+        </a>
+      </div>
+      <!--End of main news picture-->
+      <!--Four news headline on right side of main news-->
+      <!-- <section id="side-main-news"> -->
+      <!--1st headline on right side of main news-->
+      <section class="side-news">
+        <!--The name of news category-->
+        <div class="news-category">
+          <a href="#">Transportation</a>
+        </div>
+        <!--Headline-->
+        <h3 class="news-title">
+          <a href="#"
+            >The best electric bikes in 2023 for every type of rider</a
+          >
+        </h3>
+        <!--The name of reporter-->
+        <p class="news-rep-name"><a href="#">Rebecca Bellan</a></p>
+      </section>
+      <!--End of 1st headline on right side of main news-->
+
+      <!--2nd headline-->
+      <section class="side-news">
+        <div class="news-category">
+          <a href="#">Market Analysis</a>
+        </div>
+        <h3 class="news-title">
+          <a href="#"
+            >Web3 games don’t need to highlight blockchain elements to
+            succeed</a
+          >
+        </h3>
+        <p class="news-rep-name"><a href="#">Jacquelyn Melinek</a></p>
+      </section>
+      <!--3rd headline-->
+      <section class="side-news">
+        <div class="news-category">
+          <a href="#">Hardware</a>
+        </div>
+        <h3 class="news-title">
+          <a href="#"
+            >If you don’t buy Jony Ive’s $60,000 turntable, are you really a
+            music fan?</a
+          >
+        </h3>
+        <p class="news-rep-name"><a href="#">Brian Heater</a></p>
+      </section>
+      <!--4th headline-->
+      <section class="side-news">
+        <div class="news-category">
+          <a href="#">AI</a>
+        </div>
+        <h3 class="news-title">
+          <a href="#">OpenAI makes GPT-4 generally available</a>
+        </h3>
+        <p class="news-rep-name" id="last-side-news">
+          <a href="#">Kyle Wiggers</a>
+        </p>
+      </section>
+      <!-- </section> -->
+      <!--End of four headlines on right side of main news-->
+    </div>
+    <!--End of the group of main news and four headlines-->
+
+    <!--The latest news section-->
+    <div id="the-latest">
+      <div id="content">
+        <article class="latest-news">
+          <h2>The Latest</h2>
+        </article>
+        <article class="latest-news">
+          <header class="flex-item">
+            <!--The category of the news-->
+            <div class="news-category"><a href="#">Social</a></div>
+            <!--The news headline-->
+            <h3 class="news-title">
+              <a href="#"
+                >Meta’s vision for Threads is more mega-mall than public
+                square</a
+              >
+            </h3>
+            <!--The name of reporter-->
+            <div>
+              <p class="news-rep-name">Taylor Hatmaker</p>
+              <!--Time and date of report-->
+              <time datetime="2023-07-07T21:32:46"
+                >"2:32 PM PDT
+                <span>.</span>
+                "July 7, 2023"
+              </time>
+            </div>
+          </header>
+          <!--Brief explanation of the news-->
+          <section id="latest-news-brief-01" class="flex-item">
+            <h4>
+              In the latest sign that Meta’s new Twitter lookalike Threads is
+              unlikely to capture the essence of its predecessor, the company is
+              apparently actively disinterested in cultivating its new app...
+            </h4>
+          </section>
+          <!--The picture of news-->
+          <div class="news-pic flex-item">
+            <figure>
+              <picture>
+                <source
+                  srcset="
+                    https://techcrunch.com/wp-content/uploads/2023/07/threads-twitter-logos.jpg?w=100&amp;h=53&amp;crop=1  100w,
+                    https://techcrunch.com/wp-content/uploads/2023/07/threads-twitter-logos.jpg?w=200&amp;h=107&amp;crop=1 200w,
+                    https://techcrunch.com/wp-content/uploads/2023/07/threads-twitter-logos.jpg?w=430&amp;h=230&amp;crop=1 430w
+                  "
+                  sizes="(max-width: 850px) calc(100vw-40px),850px"
+                  media="(max-width: 380px)"
+                />
+
+                <img
+                  alt="Threads and Twitter logos"
+                  sizes="calc(100vw-40px)"
+                  src="https://techcrunch.com/wp-content/uploads/2023/07/threads-twitter-logos.jpg?w=430&amp;h=230&amp;crop=1"
+                  srcset="
+                    https://techcrunch.com/wp-content/uploads/2023/07/threads-twitter-logos.jpg?w=100&amp;h=53&amp;crop=1  100w,
+                    https://techcrunch.com/wp-content/uploads/2023/07/threads-twitter-logos.jpg?w=200&amp;h=107&amp;crop=1 200w,
+                    https://techcrunch.com/wp-content/uploads/2023/07/threads-twitter-logos.jpg?w=430&amp;h=230&amp;crop=1 430w
+                  "
+                />
+              </picture>
+            </figure>
+          </div>
+        </article>
+        <!--The second latest news-->
+        <article class="latest-news">
+          <header class="flex-item">
+            <div class="news-category"><a href="#">Hardware</a></div>
+            <h3 class="news-title">
+              <a href="#"
+                >If you don’t buy Jony Ive’s $60,000 turntable, are you really a
+                music fan?</a
+              >
+            </h3>
+            <div>
+              <p class="news-rep-name">Brian Heater</p>
+
+              <time datetime="2023-07-07T21:32:46"
+                >"2:17 PM PDT
+                <span>.</span>
+                "July 7, 2023"
+              </time>
+            </div>
+          </header>
+          <section id="latest-news-brief-02" class="flex-item">
+            <h4>
+              You enjoyed his iMacs, his iPhones, his iPads. You thrilled at the
+              way he said “aluminium” [sic]. You admired the typeface. Are you
+              ready for the $60,000 turntable? Better make up your mind fast,
+              b...
+            </h4>
+          </section>
+
+          <div class="news-pic flex-item">
+            <figure>
+              <picture>
+                <source
+                  srcset="
+                    https://techcrunch.com/wp-content/uploads/2023/07/LP12-50_Badge-Focus.jpg?w=100&amp;h=53&amp;crop=1  100w,
+                    https://techcrunch.com/wp-content/uploads/2023/07/LP12-50_Badge-Focus.jpg?w=200&amp;h=107&amp;crop=1 200w,
+                    https://techcrunch.com/wp-content/uploads/2023/07/LP12-50_Badge-Focus.jpg?w=430&amp;h=230&amp;crop=1 430w
+                  "
+                  sizes="(max-width: 850px) calc(100vw-40px),850px"
+                  media="(max-width: 380px)"
+                />
+
+                <img
+                  alt="Turntable stylus under clear cover"
+                  sizes="calc(100vw-40px)"
+                  src="https://techcrunch.com/wp-content/uploads/2023/07/LP12-50_Badge-Focus.jpg?w=430&amp;h=230&amp;crop=1"
+                  srcset="
+                    https://techcrunch.com/wp-content/uploads/2023/07/LP12-50_Badge-Focus.jpg?w=100&amp;h=53&amp;crop=1  100w,
+                    https://techcrunch.com/wp-content/uploads/2023/07/LP12-50_Badge-Focus.jpg?w=200&amp;h=107&amp;crop=1 200w,
+                    https://techcrunch.com/wp-content/uploads/2023/07/LP12-50_Badge-Focus.jpg?w=430&amp;h=230&amp;crop=1 430w
+                  "
+                />
+              </picture>
+            </figure>
+          </div>
+        </article>
+        <!--3rd latest news-->
+        <article class="latest-news">
+          <header class="flex-item">
+            <div class="news-category"><a href="#">Robotics</a></div>
+            <h3 class="news-title">
+              <a href="#"
+                >MIT develops a motion and task planning system for home
+                robots</a
+              >
+            </h3>
+            <div>
+              <p class="news-rep-name">Brian Heater</p>
+
+              <time datetime="2023-07-07T21:32:46"
+                >"1:34 PM PDT
+                <span>.</span>
+                "July 7, 2023"
+              </time>
+            </div>
+          </header>
+          <section id="latest-news-brief-03" class="flex-item">
+            <h4>
+              Why aren’t there more robots in homes? This a surprising complex
+              question — and our homes are surprisingly complex places. A big
+              part of the reason autonomous systems are thriving on warehous...
+            </h4>
+          </section>
+          <div class="news-pic flex-item">
+            <figure>
+              <picture>
+                <source
+                  srcset="
+                    https://techcrunch.com/wp-content/uploads/2023/07/PIGInet2.jpg?w=100&amp;h=53&amp;crop=1  100w,
+                    https://techcrunch.com/wp-content/uploads/2023/07/PIGInet2.jpg?w=200&amp;h=107&amp;crop=1 200w,
+                    https://techcrunch.com/wp-content/uploads/2023/07/PIGInet2.jpg?w=430&amp;h=230&amp;crop=1 430w
+                  "
+                  sizes="(max-width: 850px) calc(100vw-40px),850px"
+                  media="(max-width: 380px)"
+                />
+
+                <img
+                  alt="MIT CSAIL are showcasing PIGINet (Plans, Images, Goal, and Initial facts),"
+                  sizes="calc(100vw-40px)"
+                  src="https://techcrunch.com/wp-content/uploads/2023/07/PIGInet2.jpg?w=430&amp;h=230&amp;crop=1"
+                  srcset="
+                    https://techcrunch.com/wp-content/uploads/2023/07/PIGInet2.jpg?w=100&amp;h=53&amp;crop=1  100w,
+                    https://techcrunch.com/wp-content/uploads/2023/07/PIGInet2.jpg?w=200&amp;h=107&amp;crop=1 200w,
+                    https://techcrunch.com/wp-content/uploads/2023/07/PIGInet2.jpg?w=430&amp;h=230&amp;crop=1 430w
+                  "
+                />
+              </picture>
+            </figure>
+          </div>
+        </article>
+        <!--End of 3rd latest news-->
+        <!--The link for loading more latest news-->
+        <div class="latest-news"><a id="load-more-link">Load More</a></div>
+      </div>
+      <!--End of the content-->
+    </div>
+    <!--End of the latest news section-->
+    <!--Sign up for newsletters section/considered as an item belongs to latest news section-->
+    <article class="latest-news">
+      <header class="newsletter-signup__header">
+        <h3>Sign up for Newsletters</h3>
+        <p>
+          <a href="#" target="_blank"> See all newsletters</a>
+        </p>
+      </header>
+      <!--Check boxes options-->
+      <div class="newsletter-form">
+        <ul>
+          <li class="form-field">
+            <input
+              id="checkbox-Readership"
+              name="newsletters"
+              type="checkbox"
+              value="Readership"
+            /><label class="checkbox-field-label" for="checkbox-Readership"
+              >Daily</label
+            >
+          </li>
+          <li class="form-field">
+            <input
+              id="checkbox-Readership-wkend"
+              name="newsletters"
+              type="checkbox"
+              value="Readership-wkend"
+            /><label
+              class="checkbox-field-label"
+              for="checkbox-Readership-wkend"
+              >Week in Review</label
+            >
+          </li>
+          <li class="form-field">
+            <input
+              id="checkbox-Readership-startups"
+              name="newsletters"
+              type="checkbox"
+              value="Readership-startups"
+            /><label
+              class="checkbox-field-label"
+              for="checkbox-Readership-startups"
+              >Startups Weekly (Special Offer)</label
+            >
+          </li>
+          <li class="form-field">
+            <input
+              id="checkbox-Readership-event-updates"
+              name="newsletters"
+              type="checkbox"
+              value="Readership-event-updates"
+            /><label
+              class="checkbox-field-label"
+              for="checkbox-Readership-event-updates"
+              >Event Updates</label
+            >
+          </li>
+          <li class="form-field">
+            <input
+              id="checkbox-Readership-sponsorship"
+              name="newsletters"
+              type="checkbox"
+              value="Readership-sponsorship"
+            /><label
+              class="checkbox-field-label"
+              for="checkbox-Readership-sponsorship"
+              >Advertising Updates</label
+            >
+          </li>
+        </ul>
+      </div>
+      <!--Email address input and submit button-->
+      <div>
+        <fieldset class="form-field-email">
+          <label class="form-field-label">Email</label>
+          <input class="form-field-input" name="email" type="email" />
+          <button class="button-primary" disabled="">Subscribe</button>
+        </fieldset>
+      </div>
+    </article>
+    <!--End of the newsletter section-->
+    <!--Page footer section-->
+
+    <footer class="site-footer" id="contact">
+      <ul class="footer">
+        <li>
+          <a href="#">
+            <img src="images/twitter.svg" alt="Link to my Twitter page" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/facebook.svg" alt="Link to my Facebook page" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/linkedin.svg" alt="Link to my Linkedin page" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/email.svg" alt="Link to my email address" />
+          </a>
+        </li>
+      </ul>
+      <p>&copy; Team Members:</p>
+      <p>John Braybrooke / Behnam Arabi</p>
+    </footer>
+  </body>
+</html>
