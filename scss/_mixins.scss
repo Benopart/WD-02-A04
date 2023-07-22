@@ -1,3 +1,4 @@
+// Mixin for hover scaling
 @mixin image-hover-effect {
   .image-container picture img {
     transition: transform 0.3s ease;
@@ -9,4 +10,26 @@
       transform: scale(1.2);
     }
   }
+}
+
+// Mixin for linear gradient
+@mixin gradient-background {
+  background: linear-gradient(to top left, $color-start 0%, $color-end 100%);
+}
+
+// Mixin for flexbox centering
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Mixin for box shadow
+@mixin box-shadow($color, $opacity) {
+  box-shadow: 0 1px 4px rgba($color, $opacity);
+}
+
+// Mixin for navbar transition
+@mixin navbar-transition($duration) {
+  transition: transform #{$duration} ease-in-out;
 }

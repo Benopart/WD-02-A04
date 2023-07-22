@@ -1,0 +1,22 @@
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--menu-items-color);
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  .footer {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background-color: var(--menu-items-color);
+  }
+  a {
+    margin-right: 1rem;
+  }
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

@@ -1,0 +1,113 @@
+.navbar {
+  position: relative;
+  width: 100%;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+  z-index: 9999;
+
+  .logo img {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 4rem;
+    width: 5rem;
+  }
+
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    left: 0;
+    padding-top: 120px;
+    box-shadow: inset 0 0 2000px var(--menu-items-color);
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    transform: translate(150%);
+    @include navbar-transition(0.5s);
+    @include gradient-background;
+
+    .navbar-menu {
+      li {
+        margin-bottom: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        list-style: none;
+      }
+    }
+  }
+
+  .nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    .checkbox {
+      position: absolute;
+      display: block;
+      height: 32px;
+      width: 32px;
+      top: 20px;
+      right: 20px;
+      z-index: 5;
+      opacity: 0;
+      cursor: pointer;
+      &:checked ~ .menu-items {
+        transform: translateX(0);
+      }
+      &:checked ~ .hamburger-lines .line1 {
+        transform: rotate(45deg);
+      }
+      &:checked ~ .hamburger-lines .line2 {
+        transform: scaleY(0);
+      }
+      &:checked ~ .hamburger-lines .line3 {
+        transform: rotate(-45deg);
+      }
+      &:checked ~ .logo {
+        transform: scale(0.8, 0.8);
+      }
+    }
+    .hamburger-lines {
+      display: block;
+      height: 26px;
+      width: 32px;
+      position: absolute;
+      top: 17px;
+      right: 10px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: var(--color-end);
+      }
+      .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+      }
+      .line2 {
+        transition: transform 0.2s ease-in-out;
+      }
+      .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+      }
+    }
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.2rem;
+      padding: 0.3rem;
+      &:hover {
+        font-weight: bolder;
+      }
+    }
+  }
+}
