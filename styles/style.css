@@ -16,6 +16,7 @@ a:active {
 
 body {
   font-family: "Poppins", sans-serif;
+  line-height: 35px;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
